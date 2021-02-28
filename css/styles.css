@@ -11,7 +11,7 @@ body {
 }
 
 nav {
-    position:fixed;
+    position: fixed;
     height: 100%;
     display:block;
     width: 80px;
@@ -55,11 +55,13 @@ nav ul li a:hover {
     position: absolute;
     left: 50%;
     top: 4.5%;
-}
-
-.down {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+.arrow:hover {
+    border: solid #dd574e;
+    border-width: 0 5px 5px 0;
 }
 
 .banner {
@@ -70,7 +72,7 @@ nav ul li a:hover {
 .center-animation,
 .right-animation {
     background-size: cover;
-    width: calc((100%-80px)/3);
+    width: calc((100%)/3);
     height: 100vh;
 }
 
@@ -168,7 +170,7 @@ nav ul li a:hover {
 #84b2b0 - light gray/green
 #dd574e - red 
 
-16, 24, 36, 54, 81, 121.5 */
+16, 20, 25, 31.25, 39.06, 48.83, 61.04, 76.29, 95.37, 11.921 */
 
 .container {
     width: 1200px;
@@ -182,12 +184,8 @@ h4 {
     font-family: 'Vollkorn', serif;
 }
 
-#section1 {
-    padding-top: 45.6rem;
-}
-
 h1 {
-    font-size: 12.15rem;
+    font-size: 11.921rem;
     line-height: 14.4rem;
     color: #dd574e;
     text-align: center;
@@ -197,51 +195,78 @@ h1 {
 }
 
 h2 {
-    font-size: 8.1rem;
+    font-size: 9.537rem;
     line-height: 9.6rem;
     color: #84b2b0;
     font-style: italic;
 }
 
 h3 {
-    font-size: 5.4rem;
+    font-size: 4.883rem;
     line-height: 7.2rem;
     color: #dd574e;
+    text-align: center;
+    border-bottom: 2px solid #dd574e;
 }
 
 h4 {
-    font-size: 3.6rem;
+    font-size: 3.906rem;
     line-height: 4.8rem;
     color: #84b2b0;
+    text-align: center;
 }
 
-#section2 .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 9.6rem;
-}
-
-#section2 p {
-    width: 480px;
-    margin-top: 16.8rem;
-}
-
-#section2 img {
-    margin-top: 12rem;
-    margin-left: -48rem;
+img {
+    position: absolute;
     user-select: none;
     -moz-user-select: none;
     -webkit-user-drag: none;
     -webkit-user-select: none;
 }
 
-#section3 .container {
+.flex {
     display: flex;
     justify-content: space-between;
 }
 
-#section3 p {
+p {
     width: 480px;
+}
+
+#section1 {
+    padding-top: 45.6rem;
+}
+
+#section1 img {
+    margin-top: -670px;
+    right: 0;
+}
+
+#section2,
+#section5,
+#section6,
+#section16,
+#section19 {
+    padding-top: 9.6rem;
+}
+
+#section7,
+#section18 {
+    padding-top: 7.2rem;
+}
+
+#section10,
+#section11 {
+    padding-top: 14.4rem;
+}
+
+#section2 p {
+    margin-top: 16.8rem;
+}
+
+#section2 img {
+    margin-top: 12rem;
+    margin-left: -4rem;
 }
 
 #section3 p:first-child {
@@ -250,14 +275,6 @@ h4 {
 
 #section3 p:last-child {
     margin-top: 45.6rem;
-}
-
-#section3 img {
-    position: absolute;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
 }
 
 #section3 img:nth-child(2) {
@@ -269,16 +286,6 @@ h4 {
     right: 12%;
     margin-top: -650px;
 }
-
-/* #section3 img:first-child {
-    right: 0%;
-    margin-top: 50px;
-}
-
-#section3 img:last-child {
-    left: 0;
-    margin-top: 100px;
-} */
 
 #section4,
 #section9,
@@ -295,13 +302,13 @@ h4 {
     transform:translate(0,-50%);
 }
 
-#section5 {
-    padding-top: 9.6rem;
+#section5 h3,
+#section6 h3 {
+    text-align: left;
+    border-bottom: none;
 }
 
 #section5 .col {
-    display: flex;
-    justify-content: space-between;
     margin-top: 4.8rem;
 }
 
@@ -309,32 +316,12 @@ h4 {
     width: calc(90%/3);
 }
 
-#section5 .image {
-    width: 94.97vw;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    margin-top: -450px;
-}
-
 #section5 img {
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
+    margin-top: -510px;
 }
 
-#section6 {
-    padding-top: 9.6rem;
-}
-
-#section6 .col {
-    display: flex;
-    justify-content: space-between;
-}
-
-#section6 p {
-    width: 480px;
+#section5 img:last-child {
+    right: 0;
 }
 
 #section6 p:first-child {
@@ -346,27 +333,8 @@ h4 {
 }
 
 #section6 img {
-    position: absolute;
     margin-top: -703px;
-    left: 43%;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-}
-
-
-#section7 .container {
-    padding-top: 7.2rem;
-}
-
-#section7 .col {
-    display: flex;
-    justify-content: space-between;
-}
-
-#section7 p {
-    width: 480px;
+    left: 44%;
 }
 
 #section7 p:nth-child(2) {
@@ -375,7 +343,7 @@ h4 {
 }
 
 #section8 .container {
-    padding-top: 14.4rem;
+    padding-top: 16.8rem;
 }
 
 #section8 p {
@@ -383,183 +351,103 @@ h4 {
     margin: 0 auto;
 }
 
-#section8 .image {
-    display: flex;
-}
-
-#section8 img {
-    height: 100%;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
-}
-
-#section8 img:first-child {
+#section8 img:nth-child(2) {
     margin-top: 430px;
     margin-left: -75px;
 }
 
 #section8 img:last-child {
-    margin-left: 375px;
-    margin-top: -70px;
+    margin-top: -30px;
+    right: 9.5%;
+}
+
+.char {
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.char p {
+    margin: 0 auto;
+}
+
+.char .container {
+    position: absolute;
+}
+
+.char .name,
+#section14 .name {
+    margin: 0 auto 4.6rem;
 }
 
 #section10 {
-    background-size: contain;
-    background-attachment: fixed;
     background-image: url('../img/count-olaf.png');
     background-position: bottom left;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
 }
 
 #section10 .container {
     right: 2%;
-    position: absolute;
-    padding-top: 14.4rem;
 }
 
 #section10 .name {
-    width: 320px;
-    margin: 0 auto 4.6rem;
-}
-
-#section10 h3 {
-    text-align: center;
-    border-bottom: 2px solid #dd574e;
-}
-
-#section10 p {
-    width: 480px;
-    margin: 0 auto;
+    width: 290px;
 }
 
 #section11 {
-    background-size: contain;
-    background-attachment: fixed;
     background-image: url('../img/violet-baudelaire.png');
     background-position: bottom right;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
 }
 
 #section11 .container {
     left: 0;
-    position: absolute;
-    padding-top: 14.4rem;
 }
 
 #section11 .name {
-    width: 480px;
-    margin: 0 auto 4.6rem;
-}
-
-#section11 h3 {
-    text-align: center;
-    border-bottom: 2px solid #dd574e;
-}
-
-#section11 p {
-    width: 480px;
-    margin: 0 auto;
+    width: 440px;
 }
 
 #section12 {
-    background-size: contain;
-    background-attachment: fixed;
     background-image: url('../img/klaus-baudelaire.png');
     background-position: left;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
 }
 
 #section12 .container {
     right: 2%;
-    position: absolute;
     padding-top: 19.2rem;
 }
 
 #section12 .name {
-    width: 480px;
-    margin: 0 auto 4.6rem;
-}
-
-#section12 h3 {
-    text-align: center;
-    border-bottom: 2px solid #dd574e;
-}
-
-#section12 p {
-    width: 480px;
-    margin: 0 auto;
+    width: 440px;
 }
 
 #section13 {
-    background-size: contain;
-    background-attachment: fixed;
     background-image: url('../img/sunny-baudelaire.png');
     background-position: bottom right;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
 }
 
 #section13 .container {
     left: 7%;
-    position: absolute;
     padding-top: 24rem;
 }
 
 #section13 .name {
-    width: 480px;
-    margin: 0 auto 4.6rem;
-}
-
-#section13 h3 {
-    text-align: center;
-    border-bottom: 2px solid #dd574e;
-}
-
-#section13 p {
-    width: 480px;
-    margin: 0 auto;
-}
-
-#section14 {
-    background-color: #f2f2f2;
+    width: 450px;
 }
 
 #section14 .container {
-    display: flex;
-    justify-content: space-between;
     padding-top: 12rem;
 }
 
-#section14 .col {
-    width: 480px;
-}
-
 #section14 .col:first-child .name {
-    width: 320px;
-    margin: 0 auto 4.6rem;
+    width: 300px;
 }
 
 #section14 .col:last-child .name {
-    width: 440px;
-    margin: 0 auto 4.6rem;
-}
-
-#section14 h3 {
-    text-align: center;
-    border-bottom: 2px solid #dd574e;
+    width: 410px;
 }
 
 #section14 img {
     margin: 7.2rem auto 0;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
 }
 
 #section14 .col:last-child img {
@@ -567,60 +455,35 @@ h4 {
 }
 
 #section16 {
-    background-size: contain;
-    background-attachment: fixed;
     background-image: url('../img/beatrice-baudelaire.png');
     background-position: bottom center;
-    background-repeat: no-repeat;
-    background-color: #f2f2f2;
-    padding-top: 9.6rem;
 }
 
 #section16 h3 {
-    text-align: center;
     margin-bottom: 14.4rem;
+    border-bottom: none;
 }
 
 #section16 .container {
     width: 85vw;
-    display: flex;
-    justify-content: space-between;
+    position: initial;
 }
 
-#section16 .col {
+#section16 p {
     width: 470px;
 }
 
 #section16 h4 {
-    text-align: center;
     margin-bottom: 2.4rem;
 }
 
-#section18 {
-    padding-top: 7.2rem;
-}
-
 #section18 img {
-    position: absolute;
     margin-top: -72px;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
 }
 
 #section18 img:last-child {
     right: 16%;
     margin-top: -275px;
-}
-
-#section18 .col {
-    display: flex;
-    justify-content: space-between;
-}
-
-#section18 p {
-    width: 480px;
 }
 
 #section18 p:nth-child(2) {
@@ -629,14 +492,7 @@ h4 {
 }
 
 #section19 .container {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 9.6rem;
     flex-direction: row-reverse;
-}
-
-#section19 p {
-    width: 480px;
 }
 
 #section19 p:last-child {
@@ -644,22 +500,20 @@ h4 {
 }
 
 #section19 img {
-    position: absolute;
-    margin-top: 100px;
     left: 20%;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
 }
 
 #section20 .container {
     padding: 9.6rem 0 4.8rem;
 }
 
+#section20 p {
+    width: auto;
+}
+
 #section20 p:first-child {
     font-family: 'Vollkorn', serif;
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 4.8rem;
     color: #dd574e;
 }
@@ -674,13 +528,8 @@ h4 {
 }
 
 #section20 img {
-    position: absolute;
     margin-top: -677px;
     right: 20%;
-    user-select: none;
-    -moz-user-select: none;
-    -webkit-user-drag: none;
-    -webkit-user-select: none;
 }
 
 .fp-auto-height.fp-section,
